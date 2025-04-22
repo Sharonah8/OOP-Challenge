@@ -23,3 +23,9 @@ class Pet:
             self.happiness = min(10, self.happiness + 2)
             self.hunger = min(10, self.hunger + 1)
             print(f"{self.name} is playing...")
+        
+    def get_status(self):
+        print(f"{self.name}'s current status:")
+        print(f"Hunger: {self.hunger}")
+        print(f"Energy: {self.energy}")
+        print(f"Happiness: {self.happiness}")
