@@ -34,3 +34,7 @@ class Pet:
         self.tricks.append(trick)
         self.happiness = min(10, self.happiness + 1)
         print(f"{self.name} learned a new trick: {trick}!")
+
+    def show_tricks(self):
+        print(f"Tricks: {self.tricks}")
+         
