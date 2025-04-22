@@ -29,3 +29,8 @@ class Pet:
         print(f"Hunger: {self.hunger}")
         print(f"Energy: {self.energy}")
         print(f"Happiness: {self.happiness}")
+
+    def train(self, trick):
+        self.tricks.append(trick)
+        self.happiness = min(10, self.happiness + 1)
+        print(f"{self.name} learned a new trick: {trick}!")
